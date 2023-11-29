@@ -1,0 +1,15 @@
+app:
+  name: ilonkasie-poi-backend-app
+  namespace: ilonkasie
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/ilonkasie-backend
+  org: rhdh23-lab
+  name: ilonkasie-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ilonkasie/poi-backend-app
+  tag: latest
